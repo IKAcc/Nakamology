@@ -87,7 +87,9 @@
       .project .idea{text-align: justify}
       .project .read-more{font-size: 1.4rem}
       .project .founder{font-size: 1.4rem}
-      .project .founder::after{content: '،'}
+      .project .founder::after{
+        color: black;
+        content: '، '}
       .project .founder:last-of-type::after{content: ''}
 
       li:last-of-type{border: none}
@@ -199,7 +201,7 @@
             let founders = ''
             startup.founders.map(founder => {
               if (founder.twitter) {
-                founders += `<a href="https://twitter.com/${founder.twitter}" title="${founder.name} در توییتر" class="founder link red-text red-darken-2-text-hover" target="_blank">${founder.name}</a>`
+                founders += `<span class="founder"><a href="https://twitter.com/${founder.twitter}" title="${founder.name} در توییتر" class="link red-text red-darken-2-text-hover" target="_blank">${founder.name}</a></span>`
               } else {
                 founders += `<span class="founder">${founder.name}</span>`
               }
