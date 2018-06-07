@@ -203,8 +203,7 @@
         return 0;
       }
       var instance = axios.create({
-        baseURL: 'http://149.56.64.85/api',
-	headers: {"Access-Control-Allow-Origin": "*"}
+        baseURL: 'http://149.56.64.85/api'
       })
       instance.get('/startups')
         .then(function (res) {
