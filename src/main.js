@@ -5,6 +5,8 @@ import DefaultLayout from '~/layouts/Default.vue';
 
 import InfiniteLoading from 'vue-infinite-loading';
 
+import '~/assets/style/index.css';
+
 const META_TAGS = [
     {
         name: 'charset',
