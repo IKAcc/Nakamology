@@ -1,0 +1,97 @@
+<template>
+    <div class="p-2">
+        <div class="card">
+            <span class="block text-2xl text-white font-bold mb-4">دسته‌ها</span>
+            <ul>
+                <li>
+                    <g-link to="/projects" class="link flex items-center -my-2 cursor-pointer">
+                        <span class="radio">
+                            <span class="radio__bilbil"/>
+                        </span>
+                        <span class="p-2">
+                            همه
+                        </span>
+                    </g-link>
+                </li>
+                <li v-for="tag in tags"
+                    :key="tag.id">
+                    <g-link :to="tag.path" class="link flex items-center -my-2 cursor-pointer">
+                        <span class="radio">
+                            <span class="radio__bilbil"/>
+                        </span>
+                        <span class="p-2">
+                            {{ tag.title }}
+                        </span>
+                        <span class="chips min-w-6">
+                            {{ tag.totalCount | toFarsiDigits }}
+                        </span>
+                    </g-link>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
+<static-query>
+query Tags ($page: Int) {
+  tags: allTag(
+      perPage: 50,
+      page: $page,
+    ) @paginate {
+    pageInfo {
+      totalPages
+      currentPage
+    }
+    edges {
+      node {
+        id
+        title
+        path
+        belongsTo {
+            totalCount
+        }
+      }
+    }
+  }
+}
+</static-query>
+<script>
+import { toFarsiDigits } from '~/scripts/utils/string';
+
+export default {
+    filters: {
+        toFarsiDigits(value) {
+            return toFarsiDigits(value);
+        },
+    },
+    computed: {
+        tags() {
+            return this.$static.tags.edges.map(item => {
+                return {
+                    ...item.node,
+                    totalCount: item.node.belongsTo.totalCount,
+                };
+            }).sort((a, b) => {
+                return b.totalCount - a.totalCount;
+            });
+        },
+    },
+};
+</script>
+<style scoped>
+.radio {
+    @apply h-4 w-4 p-1 rounded-full border-2 border-nk-gray-500 border-opacity-90 bg-white bg-opacity-30;
+}
+.radio__bilbil {
+    @apply block w-full h-full rounded-full
+}
+
+.link:hover,
+.link.active {
+    @apply text-white;
+}
+
+.link:hover .radio__bilbil,
+.link.active .radio__bilbil {
+    @apply bg-nk-gray-500 bg-opacity-90;
+}
+</style>

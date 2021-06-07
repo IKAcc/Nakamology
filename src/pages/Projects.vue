@@ -1,15 +1,12 @@
 <template>
     <Layout>
         <div class="mx-auto w-full max-w-5xl">
+            <h1 class="text-white text-4xl font-bold px-2 py-8">
+                پروژه‌های شکست خورده
+            </h1>
             <div class="flex flex-wrap">
-                <div class="w-1/3">
-                    filters
-                </div>
                 <div class="w-2/3">
-                    <h1 class="text-white text-4xl font-bold px-2 py-8">
-                        پروژه‌های شکست خورده
-                    </h1>
-                    <projects-list :projects="loadedItem"/>
+                    <projects-list :projects="loadedItems"/>
                     <ClientOnly>
                         <infinite-loading @infinite="infiniteHandler" spinner="spiral">
                             <div slot="no-more">
@@ -21,6 +18,11 @@
                         </infinite-loading>
                     </ClientOnly>
                 </div>
+                <aside class="relative w-1/3">
+                    <div class="md:sticky top-2">
+                        <sidebar-filters/>
+                    </div>
+                </aside>
             </div>
         </div>
     </Layout>
@@ -57,19 +59,24 @@ query Projects ($page: Int) {
 </page-query>
 <script>
 import ProjectsList from '~/components/projects/list';
+import SidebarFilters from '~/components/projects/sidebar/filter';
 
 export default {
+    metaInfo: {
+        title: 'پروژه‌های شکست خورده',
+    },
     components: {
         ProjectsList,
+        SidebarFilters,
     },
     data() {
         return {
-            loadedItem: [],
+            loadedItems: [],
             currentPage: 1,
         };
     },
     created() {
-        this.loadedItem.push(...this.$page.projects.edges.map(item => item.node));
+        this.loadedItems.push(...this.$page.projects.edges.map(item => item.node));
     },
     methods: {
         async infiniteHandler($state) {
@@ -81,7 +88,7 @@ export default {
                 );
                 if (data.projects.edges.length) {
                     this.currentPage = data.projects.pageInfo.currentPage;
-                    this.loadedItem.push(...data.projects.edges.map(item => item.node));
+                    this.loadedItems.push(...data.projects.edges.map(item => item.node));
                     $state.loaded();
                 } else {
                     $state.complete();

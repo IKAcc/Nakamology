@@ -18,10 +18,6 @@ module.exports = {
                         typeName: 'Tag',
                         create: true,
                     },
-                    founders: {
-                        typeName: 'Tag',
-                        create: true,
-                    },
                 },
             },
         },
@@ -31,6 +27,7 @@ module.exports = {
     ],
     templates: {
         Project: '/projects/:fileInfo__name',
+        Tag: '/tags/:id',
     },
     transformers: {
         remark: {
