@@ -1,32 +1,22 @@
 <template>
     <Layout>
-        <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-        <g-image alt="Example image" src="~/favicon.png" width="135"/>
-
-        <h1 class="bg-red-500">sssello, world!</h1>
-        <div></div>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-        </p>
-
-        <p class="home-links">
-            <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-            <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-        </p>
+        <div class="flex flex-wrap items-center justify-center align-middle h-screen">
+            <div class="text-center">
+                <h1 class="text-nk-red-700 text-8xl font-bold">
+                    ناکامولوژی
+                </h1>
+                <p class="m-4">
+                    استارت‌آپ‌ها و پروژه‌های بزرگی که شکست خورده‌اند را ببینید و از ناکامی آن‌ها درس بگیرید.
+                </p>
+                <g-link to="/projects" class="inline-block mt-4 py-3 px-6 font-bold text-white rounded-full shadow-md border-4 border-nk-red-700 hover:bg-nk-red-700">
+                    مشاهده‌ی پروژه‌ها
+                </g-link>
+            </div>
+        </div>
     </Layout>
 </template>
 
 <script>
 export default {
-    metaInfo: {
-        title: 'Hello, world!',
-    },
 };
 </script>
-
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
