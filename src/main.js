@@ -3,6 +3,8 @@
 
 import DefaultLayout from '~/layouts/Default.vue';
 
+import InfiniteLoading from 'vue-infinite-loading';
+
 const META_TAGS = [
     {
         name: 'charset',
@@ -30,6 +32,8 @@ const HEAD = [
 export default function (Vue, { router, head, isClient }) {
     // Set default layout as a global component
     Vue.component('Layout', DefaultLayout);
+
+    Vue.use(InfiniteLoading);
 
     // Add html attributes
     head.htmlAttrs = {

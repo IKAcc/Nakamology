@@ -11,27 +11,19 @@ module.exports = {
                 sans: ['Vazir', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                rb: {
-                    indigo: {
-                        500: '#421196',
-                    },
-                    violet: {
-                        100: '#FCF8FF',
-                        200: '#EBD6FF',
-                        500: '#9529FF',
-                        600: '#850AFF',
-                        900: '#463C74',
-                    },
-                    yellow: {
-                        500: '#FFC719',
+                nk: {
+                    gray: {
+                        300: '#414141',
+                        500: '#252525',
                     },
                     red: {
-                        500: '#FF193B',
-                    },
-                    carnelian: {
-                        500: '#B8001C',
+                        500: '#ff0000',
+                        700: '#af0430',
                     },
                 },
+            },
+            padding: {
+                full: '100%',
             },
             height: {
                 'screen-1/2': '50vh',
