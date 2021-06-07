@@ -9,5 +9,5 @@ founders:
     -  علی نادعلیزاده
 logo: ./adche.png
 tags:
-    - آگهی
+    - تبلیغات
 ---
