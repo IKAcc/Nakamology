@@ -18,6 +18,10 @@ const LINKS = [
         rel: 'stylesheet',
         href: 'https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.2.0/dist/font-face.css',
     },
+    {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/font-face.css',
+    },
 ];
 
 const HEAD = [

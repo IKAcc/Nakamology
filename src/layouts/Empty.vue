@@ -1,20 +1,10 @@
 <template>
     <div class="layout">
-        <nk-header/>
         <div>
             <slot/>
         </div>
     </div>
 </template>
-<script>
-import NkHeader from '~/components/general/header';
-
-export default {
-    components: {
-        NkHeader,
-    },
-};
-</script>
 <style lang="postcss" scoped>
 .layout {
     @apply relative min-h-screen bg-nk-gray-500 text-white text-opacity-70;
