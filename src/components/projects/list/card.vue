@@ -1,16 +1,21 @@
 <template>
-    <div class="card flex items-center">
-        <div class="flex-shrink-0 w-24">
+    <div :class="[
+        'card',
+        `card--${cardType}`
+    ]">
+        <div class="card__image">
             <g-image :src="project.logo || require('~/assets/images/unknown.png')"
-                     class="w-full rounded-full"/>
+                     class="w-full"/>
         </div>
-        <div class="pr-4">
-            <p class="text-white text-xl font-serif">
-                {{ project.name }}
-            </p>
-            <p>
-                {{ project.description }}
-            </p>
+        <div class="card__text">
+            <div>
+                <p class="text-white text-xl font-serif">
+                    {{ project.name }}
+                </p>
+                <p>
+                    {{ project.description }}
+                </p>
+            </div>
             <div class="mt-2">
                 <span v-for="tag in project.tags"
                       class="chips"
@@ -38,6 +43,35 @@ export default {
             type: Object,
             default: () => ({}),
         },
+        cardType: {
+            type: String,
+            default: 'horizontal',
+        },
     },
 };
 </script>
+<style scoped>
+.card {
+    @apply flex;
+}
+
+.card--horizontal {
+    @apply items-center;
+}
+.card--horizontal .card__image {
+    @apply flex-shrink-0 w-24;
+}
+.card--horizontal .card__text {
+    @apply pr-4;
+}
+
+.card--vertical {
+    @apply flex-col h-full;
+}
+.card--vertical .card__image {
+    @apply p-4 w-full;
+}
+.card--vertical .card__text {
+    @apply flex px-4 flex-grow flex-col justify-between;
+}
+</style>
