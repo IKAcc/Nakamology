@@ -3,8 +3,10 @@
         <ul class="flex flex-wrap">
             <li v-for="project in projects"
                 :key="project.id"
-                class="p-2 w-full">
-                <project-card :project="project"/>
+                :class="[
+                    cardType === 'horizontal' ? 'w-full p-2' : 'w-1/5 p-4'
+                ]">
+                <project-card :project="project" :card-type="cardType"/>
             </li>
         </ul>
     </div>
@@ -20,6 +22,10 @@ export default {
         projects: {
             type: Array,
             default: () => ([]),
+        },
+        cardType: {
+            type: String,
+            default: 'horizontal',
         },
     },
 };

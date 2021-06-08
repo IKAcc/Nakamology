@@ -1,5 +1,5 @@
 <template>
-    <header class="h-16 sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-50 border-b border-nk-gray-500">
+    <header class="h-16 sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-nk-gray-500 bg-opacity-50 border-b border-nk-gray-300">
         <nav class="container mx-auto h-full flex flex-wrap items-center font-serif">
             <g-link to="/" class="p-2 block text-nk-red-700 text-3xl font-black">
                 ناکامولوژی
@@ -7,7 +7,7 @@
             <ul class="flex flex-wrap">
                 <li v-for="link in links"
                     :key="link.to">
-                    <g-link :to="link.to" class="link--white mx-2">
+                    <g-link :to="link.to" class="link link--white p-2 mx-2">
                         {{ link.title }}
                     </g-link>
                 </li>

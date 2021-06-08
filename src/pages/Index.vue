@@ -1,33 +1,59 @@
 <template>
     <Layout>
-        <div class="flex flex-wrap items-center justify-center align-middle h-screen">
-            <div class="text-center">
-                <div class="font-serif">
-                    <h1 class="text-nk-red-700 text-9xl font-bold">
-                        ناکامولوژی
-                    </h1>
-                    <div class="text-right m-4 text-xl">
-                        <span class="opacity-50">( ~. لُ) [ فر. ] (اِمر.)</span>
-                        <p>
-                            مطالعه استارتاپ‌ها و پروژه‌های شکست خورده
-                        </p>
-                    </div>
+        <hero :total-count="totalProjectCount"/>
+        <div class="container mx-auto px-2">
+            <div class="flex items-center">
+                <div class="flex-grow">
+                    <p class="py-5 font-serif text-2xl text-white opacity-90">
+                        آخرین ناکامی‌ها
+                    </p>
                 </div>
-                <div class="pt-4">
-                    <g-link to="/projects" class="button">
-                        پروژ‌ها را ببین
-                    </g-link>
-                    <g-link to="/about-us" class="link--white mr-4">
-                        به ما کمک کن
+                <div class="flex-grow text-left">
+                    <g-link to="/projects" class="link link--red text-lg font-bold">
+                        مشاهده‌ی همه
                     </g-link>
                 </div>
+            </div>
+            <hr class="border-nk-gray-300">
+            <div class="-mx-4 py-4">
+                <projects-list :projects="latestProjects" card-type="vertical"/>
             </div>
         </div>
     </Layout>
 </template>
-
+<page-query>
+query Projects {
+  projects: allProject(
+      sortBy: "failure_year",
+      order: DESC,
+      perPage: 5,
+      page: 1,
+    ) @paginate {
+    pageInfo {
+      totalPages
+      currentPage
+    }
+    edges {
+      node {
+        id
+        name
+        path
+        logo
+        start_year
+        failure_year
+        tags {
+            id
+            title
+        }
+        description
+      }
+    }
+  }
+}
+</page-query>
 <script>
-import Layout from '~/layouts/Empty';
+import Hero from '~/components/index/hero';
+import ProjectsList from '~/components/projects/list';
 
 export default {
     metaInfo: {
@@ -35,7 +61,16 @@ export default {
 
     },
     components: {
-        Layout,
+        Hero,
+        ProjectsList,
+    },
+    computed: {
+        latestProjects() {
+            return this.$page.projects.edges.map(item => item.node);
+        },
+        totalProjectCount() {
+            return this.$page.projects.pageInfo.totalPages * 5;
+        },
     },
 };
 </script>
