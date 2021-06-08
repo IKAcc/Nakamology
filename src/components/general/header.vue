@@ -1,8 +1,8 @@
 <template>
-    <header class="h-16 sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-nk-gray-500 bg-opacity-50 border-b border-nk-gray-500">
-        <nav class="container mx-auto flex flex-wrap items-center">
-            <g-link to="/" class="p-2 block">
-                <g-image id="logo" src="~/favicon.png" alt="RangerBrand" class="h-12 w-auto block rounded-full"/>
+    <header class="h-16 sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-50 border-b border-nk-gray-500">
+        <nav class="container mx-auto h-full flex flex-wrap items-center font-serif">
+            <g-link to="/" class="p-2 block text-nk-red-700 text-3xl font-black">
+                ناکامولوژی
             </g-link>
             <ul class="flex flex-wrap">
                 <li v-for="link in links"
