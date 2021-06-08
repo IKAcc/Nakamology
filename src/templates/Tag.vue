@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <div class="mx-auto w-full max-w-5xl">
-            <h1 class="text-white text-4xl font-bold px-2 py-8">
+            <h1 class="text-white text-4xl font-bold px-2 py-8 font-serif">
                 لیست ناکامی‌ها‌ی «{{ $page.tag.title }}»
             </h1>
             <div class="flex flex-wrap">
@@ -52,7 +52,7 @@ import SidebarFilters from '~/components/projects/sidebar/filter';
 export default {
     metaInfo() {
         return {
-            title: `لیست ناکامی‌ها‌ی «${this.$page.tag.title}»`,
+            titleTemplate: `%s - لیست ناکامی‌ها‌ی «${this.$page.tag.title}»`,
         };
     },
     components: {

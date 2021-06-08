@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <div class="mx-auto w-full max-w-5xl">
-            <h1 class="text-white text-4xl font-bold px-2 py-8">
+            <h1 class="text-white text-4xl font-bold px-2 py-8 font-serif">
                 لیست ناکامی‌ها
             </h1>
             <div class="flex flex-wrap">
@@ -19,7 +19,7 @@
                     </ClientOnly>
                 </div>
                 <aside class="relative w-1/3">
-                    <div class="md:sticky top-16">
+                    <div class="md:sticky top-18">
                         <sidebar-filters/>
                     </div>
                 </aside>
@@ -63,7 +63,7 @@ import SidebarFilters from '~/components/projects/sidebar/filter';
 
 export default {
     metaInfo: {
-        title: 'لیست ناکامی‌ها',
+        titleTemplate: '%s - لیست ناکامی‌ها',
     },
     components: {
         ProjectsList,
