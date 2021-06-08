@@ -2,7 +2,7 @@
     <Layout>
         <div class="mx-auto w-full max-w-5xl">
             <h1 class="text-white text-4xl font-bold px-2 py-8">
-                پروژه‌های شکست خورده
+                لیست ناکامی‌ها
             </h1>
             <div class="flex flex-wrap">
                 <div class="w-2/3">
@@ -19,7 +19,7 @@
                     </ClientOnly>
                 </div>
                 <aside class="relative w-1/3">
-                    <div class="md:sticky top-2">
+                    <div class="md:sticky top-16">
                         <sidebar-filters/>
                     </div>
                 </aside>
@@ -63,7 +63,7 @@ import SidebarFilters from '~/components/projects/sidebar/filter';
 
 export default {
     metaInfo: {
-        title: 'پروژه‌های شکست خورده',
+        title: 'لیست ناکامی‌ها',
     },
     components: {
         ProjectsList,

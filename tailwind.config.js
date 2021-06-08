@@ -9,6 +9,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Vazir', ...defaultTheme.fontFamily.sans],
+                serif: ['Sahel', ...defaultTheme.fontFamily.serif],
             },
             colors: {
                 nk: {

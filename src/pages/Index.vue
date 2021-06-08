@@ -17,6 +17,11 @@
 </template>
 
 <script>
+import Layout from '~/layouts/Empty';
+
 export default {
+    components: {
+        Layout,
+    },
 };
 </script>

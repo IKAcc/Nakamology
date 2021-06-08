@@ -2,7 +2,7 @@
     <Layout>
         <div class="mx-auto w-full max-w-5xl">
             <h1 class="text-white text-4xl font-bold px-2 py-8">
-                پروژه‌های شکست خورده‌ی «{{ $page.tag.title }}»
+                لیست ناکامی‌ها‌ی «{{ $page.tag.title }}»
             </h1>
             <div class="flex flex-wrap">
                 <div class="w-2/3">
@@ -52,7 +52,7 @@ import SidebarFilters from '~/components/projects/sidebar/filter';
 export default {
     metaInfo() {
         return {
-            title: `پروژه‌های شکست خورده‌ی «${this.$page.tag.title}»`,
+            title: `لیست ناکامی‌ها‌ی «${this.$page.tag.title}»`,
         };
     },
     components: {
