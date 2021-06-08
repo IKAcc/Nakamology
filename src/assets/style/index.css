@@ -20,3 +20,18 @@
     @apply smooth inline-block p-2 text-white;
     @apply hover:text-nk-red-700;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    padding: 2px;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-nk-gray-500 bg-opacity-70 rounded-sm;
+}
+::-webkit-scrollbar-thumb:hover{
+    @apply bg-nk-gray-500 bg-opacity-50 cursor-pointer;
+}
+::-webkit-scrollbar-track{
+    @apply bg-nk-gray-300;
+}
