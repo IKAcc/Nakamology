@@ -1,28 +1,19 @@
 <template>
     <div class="p-2">
         <div class="card">
-            <span class="block text-2xl text-white font-bold mb-4">دسته‌ها</span>
+            <span class="block text-2xl text-white font-bold mb-4 font-serif">دسته‌ها</span>
             <ul>
-                <li>
-                    <g-link to="/projects" class="link flex items-center -my-2 cursor-pointer">
-                        <span class="radio">
-                            <span class="radio__bilbil"/>
-                        </span>
-                        <span class="p-2">
-                            همه
-                        </span>
-                    </g-link>
-                </li>
                 <li v-for="tag in tags"
                     :key="tag.id">
-                    <g-link :to="tag.path" class="link flex items-center -my-2 cursor-pointer">
+                    <g-link :to="tag.path" class="item flex items-center -my-2 cursor-pointer">
                         <span class="radio">
                             <span class="radio__bilbil"/>
                         </span>
                         <span class="p-2">
                             {{ tag.title }}
                         </span>
-                        <span class="chips min-w-6">
+                        <span v-if="tag.totalCount"
+                              class="chips min-w-6">
                             {{ tag.totalCount | toFarsiDigits }}
                         </span>
                     </g-link>
@@ -65,14 +56,20 @@ export default {
     },
     computed: {
         tags() {
-            return this.$static.tags.edges.map(item => {
-                return {
-                    ...item.node,
-                    totalCount: item.node.belongsTo.totalCount,
-                };
-            }).sort((a, b) => {
-                return b.totalCount - a.totalCount;
-            });
+            return [
+                {
+                    totalCount: 0,
+                    title: 'همه',
+                    path: '/projects',
+                },
+                ...this.$static.tags.edges.map(item => {
+                    return {
+                        ...item.node,
+                        totalCount: item.node.belongsTo.totalCount,
+                    };
+                }).sort((a, b) => {
+                    return b.totalCount - a.totalCount;
+                })];
         },
     },
 };
@@ -85,13 +82,13 @@ export default {
     @apply block w-full h-full rounded-full
 }
 
-.link:hover,
-.link.active {
+.item:hover,
+.item.active {
     @apply text-white;
 }
 
-.link:hover .radio__bilbil,
-.link.active .radio__bilbil {
+.item:hover .radio__bilbil,
+.item.active .radio__bilbil {
     @apply bg-nk-gray-500 bg-opacity-90;
 }
 </style>

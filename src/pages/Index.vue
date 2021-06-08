@@ -2,15 +2,25 @@
     <Layout>
         <div class="flex flex-wrap items-center justify-center align-middle h-screen">
             <div class="text-center">
-                <h1 class="text-nk-red-700 text-8xl font-bold">
-                    ناکامولوژی
-                </h1>
-                <p class="m-4">
-                    استارت‌آپ‌ها و پروژه‌های بزرگی که شکست خورده‌اند را ببینید و از ناکامی آن‌ها درس بگیرید.
-                </p>
-                <g-link to="/projects" class="inline-block mt-4 py-3 px-6 font-bold text-white rounded-full shadow-md border-4 border-nk-red-700 hover:bg-nk-red-700">
-                    مشاهده‌ی پروژه‌ها
-                </g-link>
+                <div class="font-serif">
+                    <h1 class="text-nk-red-700 text-9xl font-bold">
+                        ناکامولوژی
+                    </h1>
+                    <div class="text-right m-4 text-xl">
+                        <span class="opacity-50">( ~. لُ) [ فر. ] (اِمر.)</span>
+                        <p>
+                            مطالعه استارتاپ‌ها و پروژه‌های شکست خورده
+                        </p>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <g-link to="/projects" class="button">
+                        پروژ‌ها را ببین
+                    </g-link>
+                    <g-link to="/about-us" class="link--white mr-4">
+                        به ما کمک کن
+                    </g-link>
+                </div>
             </div>
         </div>
     </Layout>
@@ -20,6 +30,10 @@
 import Layout from '~/layouts/Empty';
 
 export default {
+    metaInfo: {
+        titleTemplate: '%s - مطالعه استارتاپ‌ها و پروژه‌های شکست خورده',
+
+    },
     components: {
         Layout,
     },

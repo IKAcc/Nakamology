@@ -33,6 +33,9 @@ module.exports = {
             minWidth: {
                 6: '1.5rem',
             },
+            inset: {
+                18: '4.5rem',
+            },
         },
     },
     variants: {

@@ -5,7 +5,7 @@
                      class="w-full rounded-full"/>
         </div>
         <div class="pr-4">
-            <p class="text-white text-xl">
+            <p class="text-white text-xl font-serif">
                 {{ project.name }}
             </p>
             <p>

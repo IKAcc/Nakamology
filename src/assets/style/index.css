@@ -1,7 +1,22 @@
+.smooth {
+    @apply transition-all duration-300 ease-in-out;
+}
 .card {
-    @apply bg-nk-gray-300 shadow-lg p-4 rounded-lg transition-all duration-300 ease-in-out;
+    @apply smooth bg-nk-gray-300 shadow-lg p-4 rounded-lg;
     @apply hover:shadow-xl;
 }
 .chips {
     @apply inline-block px-2 py-1 ml-2 text-center bg-nk-gray-500 bg-opacity-50 text-xs rounded-full
+}
+.button {
+    @apply smooth inline-block py-3 px-6 font-bold text-white rounded-full shadow-md border-4 border-nk-red-700;
+    @apply hover:bg-nk-red-700;
+}
+.link {
+    @apply smooth inline-block p-2 text-nk-red-700;
+    @apply hover:text-nk-red-500;
+}
+.link--white {
+    @apply smooth inline-block p-2 text-white;
+    @apply hover:text-nk-red-700;
 }
