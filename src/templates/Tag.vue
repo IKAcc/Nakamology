@@ -5,14 +5,14 @@
                 لیست ناکامی‌ها‌ی «{{ $page.tag.title }}»
             </h1>
             <div class="flex flex-wrap">
-                <div class="w-2/3">
-                    <projects-list :projects="loadedItems"/>
-                </div>
                 <aside class="relative w-1/3">
                     <div class="md:sticky top-2">
                         <sidebar-filters/>
                     </div>
                 </aside>
+                <div class="w-2/3">
+                    <projects-list :projects="loadedItems"/>
+                </div>
             </div>
         </div>
     </Layout>

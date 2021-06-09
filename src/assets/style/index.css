@@ -2,7 +2,10 @@
     @apply transition-all duration-300 ease-in-out;
 }
 .card {
-    @apply bg-nk-gray-300 p-4;
+    @apply smooth bg-nk-gray-300 p-4;
+}
+a.card {
+    @apply hover:bg-opacity-70;
 }
 .chips {
     @apply inline-block px-2 py-1 ml-2 text-center bg-nk-gray-500 bg-opacity-50 text-xs rounded-full

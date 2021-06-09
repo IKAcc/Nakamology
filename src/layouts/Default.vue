@@ -1,7 +1,7 @@
 <template>
-    <div class="layout">
+    <div class="layout flex flex-col">
         <nk-header/>
-        <div>
+        <div class="flex-grow">
             <slot/>
         </div>
         <nk-footer/>

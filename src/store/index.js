@@ -16,11 +16,11 @@ const actions = {
         if (window) {
             const device = {};
             const deviceWidths = {
-                isSmallMobile: [0, 575],
-                isMobile: [0, 767],
-                isTablet: [768, 991],
-                isDesktop: [992, Infinity],
-                isLargeDesktop: [1200, Infinity],
+                isSmallMobile: [0, 640],
+                isMobile: [0, 768],
+                isTablet: [769, 1024],
+                isDesktop: [1024, Infinity],
+                isLargeDesktop: [1280, Infinity],
             };
             const checkDevice = debounce(() => {
                 const windowWidth = window.innerWidth;
