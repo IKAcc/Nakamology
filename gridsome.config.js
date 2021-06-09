@@ -5,6 +5,13 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+    chainWebpack: config => {
+        const svgRule = config.module.rule('svg');
+        svgRule.uses.clear();
+        svgRule
+            .use('vue-svg-loader')
+            .loader('vue-svg-loader');
+    },
     siteName: 'ناکامولوژی',
     plugins: [
         {

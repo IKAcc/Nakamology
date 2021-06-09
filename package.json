@@ -14,12 +14,15 @@
     "@gridsome/transformer-remark": "^0.6.4",
     "gh-pages": "^3.2.0",
     "gridsome": "^0.7.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.mapvalues": "^4.6.0",
     "remark": "^13.0.0",
     "remark-attr": "^0.11.1",
     "remark-inline-links": "^5.0.0",
     "remark-toc": "^7.2.0",
     "truncatise": "^0.0.8",
-    "vue-infinite-loading": "^2.4.5"
+    "vue-infinite-loading": "^2.4.5",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "autoprefixer": "^9",
@@ -39,6 +42,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.0.2",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vue-svg-loader": "^0.16.0"
   }
 }

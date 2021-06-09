@@ -1,6 +1,9 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
+import Vuex from 'vuex';
+import store from '~/store';
+
 import DefaultLayout from '~/layouts/Default.vue';
 
 import InfiniteLoading from 'vue-infinite-loading';
@@ -35,7 +38,7 @@ const HEAD = [
     },
 ];
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient, appOptions }) {
     // Set default layout as a global component
     Vue.component('Layout', DefaultLayout);
 
@@ -52,4 +55,8 @@ export default function (Vue, { router, head, isClient }) {
             head[type.key].push(tag);
         });
     });
+
+    // Create Store
+    Vue.use(Vuex);
+    appOptions.store = new Vuex.Store(store);
 }

@@ -4,7 +4,7 @@
             <li v-for="project in projects"
                 :key="project.id"
                 :class="[
-                    cardType === 'horizontal' ? 'w-full p-2' : 'w-1/5 p-4'
+                    cardType === 'horizontal' ? 'w-full p-2' : 'w-full md:w-1/5 p-4'
                 ]">
                 <project-card :project="project" :card-type="cardType"/>
             </li>
