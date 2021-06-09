@@ -16,7 +16,7 @@
             <div class="flex flex-wrap justify-center py-4">
                 <div v-for="(supporter, index) in supporters"
                      :key="index"
-                     class="p-4 w-1/5 text-center">
+                     class="p-4 w-full md:w-1/5 text-center">
                     <a :href="supporter.url" target="_blank" class="card block">
                         <g-image :src="supporter.image" class="h-28 w-auto p-2 max-w-full mx-auto"/>
                         <p class="p-2 font-serif text-lg text-white ">{{ supporter.name }}</p>
