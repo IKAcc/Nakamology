@@ -1,7 +1,7 @@
 <template>
     <div class="p-2">
         <div class="card overflow-hidden">
-            <span class="block text-2xl text-white font-bold mb-4 font-serif">دسته‌ها</span>
+            <span class="block text-2xl text-white font-bold mb-4 font-serif">برچسب‌ها</span>
             <div class="relative">
                 <ul class="max-h-72 overflow-y-auto -m-4 p-4">
                     <li v-for="tag in tags"
@@ -26,7 +26,7 @@
 </template>
 <static-query>
 query Tags ($page: Int) {
-  tags: allTag(
+tags: allTag(
       perPage: 50,
       page: $page,
     ) @paginate {

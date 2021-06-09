@@ -5,6 +5,11 @@
                 لیست ناکامی‌ها
             </h1>
             <div class="flex flex-wrap">
+                <aside class="hidden md:block relative w-1/3">
+                    <div class="md:sticky top-18">
+                        <sidebar-filters/>
+                    </div>
+                </aside>
                 <div class="w-full md:w-2/3">
                     <projects-list :projects="loadedItems"/>
                     <ClientOnly>
@@ -18,12 +23,6 @@
                         </infinite-loading>
                     </ClientOnly>
                 </div>
-                <aside class="hidden md:block relative w-1/3">
-                    <div class="md:sticky top-18">
-                        <sidebar-filters/>
-                    </div>
-                </aside>
-                </h1>
             </div>
         </div>
     </Layout>
