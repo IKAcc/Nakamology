@@ -20,8 +20,8 @@
                     </nk-btn>
                 </div>
             </div>
-            <div class="hidden lg:block w-1/3 pt-8">
-                <div class="relative h-full bg-nk-red-700 -ml-8">
+            <div class="hidden lg:block w-1/3">
+                <div class="relative h-full bg-nk-red-700 -ml-8 mt-8 shadow-lg">
                     <div class="absolute right-0 bottom-0 p-4 font-serif text-white">
                         <span class="block text-2xl">بیش از {{ totalCount | toFarsiDigits }}</span>
                         <span class="block text-lg">داستان شکست</span>

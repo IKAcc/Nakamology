@@ -1,17 +1,20 @@
 <template>
-    <div class="layout overflow-x-hidden">
+    <div class="layout">
         <nk-header/>
         <div>
             <slot/>
         </div>
+        <nk-footer/>
     </div>
 </template>
 <script>
 import NkHeader from '~/components/general/header';
+import NkFooter from '~/components/general/footer';
 
 export default {
     components: {
         NkHeader,
+        NkFooter,
     },
     mounted() {
         this.$store.dispatch('checkDevice');
