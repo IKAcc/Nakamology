@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <div class="mx-auto w-full max-w-5xl">
-            <h1 class="text-white text-4xl font-bold px-2 py-8 font-serif">
+            <h1 class="h1 px-2">
                 لیست ناکامی‌ها‌ی «{{ $page.tag.title }}»
             </h1>
             <div class="flex flex-wrap">

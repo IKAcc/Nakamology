@@ -34,3 +34,10 @@
 ::-webkit-scrollbar-track{
     @apply bg-nk-gray-300;
 }
+
+.h1 {
+    @apply text-white text-4xl font-bold py-8 font-serif;
+}
+.h2 {
+    @apply text-white opacity-90 text-2xl py-5 font-serif;
+}
