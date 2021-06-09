@@ -4,7 +4,7 @@
         <div class="container mx-auto px-2">
             <div class="flex items-center">
                 <div class="flex-grow">
-                    <p class="py-5 font-serif text-2xl text-white opacity-90">
+                    <p class="h2">
                         آخرین ناکامی‌ها
                     </p>
                 </div>
