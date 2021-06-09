@@ -1,5 +1,5 @@
 <template>
-    <div class="layout">
+    <div class="layout overflow-x-hidden">
         <nk-header/>
         <div>
             <slot/>
@@ -12,6 +12,9 @@ import NkHeader from '~/components/general/header';
 export default {
     components: {
         NkHeader,
+    },
+    mounted() {
+        this.$store.dispatch('checkDevice');
     },
 };
 </script>
