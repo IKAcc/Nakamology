@@ -36,6 +36,9 @@ module.exports = {
             inset: {
                 18: '4.5rem',
             },
+            listStyleType: {
+                square: 'square',
+            },
         },
     },
     variants: {

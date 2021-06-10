@@ -11,12 +11,8 @@
                     <div class="mb-4">
                         <info-card :project="project"/>
                     </div>
-                    <div class="card">
-                        <article v-if="project.content && project.content !== '\n'"
-                                 v-html="project.content"/>
-                        <div v-else class="text-center py-6 px-2 font-serif text-lg text-white opacity-20">
-                            متاسفانه توضیحات بیشتری وجود ندارد.
-                        </div>
+                    <div class="mb-4">
+                        <content-card :content="project.content"/>
                     </div>
                 </div>
             </div>
@@ -45,6 +41,7 @@ query Project ($path: String!) {
 <script>
 import ProjectCard from '~/components/projects/list/card';
 import InfoCard from '~/components/projects/profile/info';
+import ContentCard from '~/components/projects/profile/content';
 
 import { toFarsiDigits } from '~/scripts/utils/string';
 
@@ -64,6 +61,7 @@ export default {
     components: {
         ProjectCard,
         InfoCard,
+        ContentCard,
     },
     metaInfo() {
         return {
