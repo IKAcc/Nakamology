@@ -43,6 +43,8 @@ module.exports = {
                 ['remark-toc', { heading: 'sommaire' }],
                 'remark-attr',
             ],
+            externalLinksTarget: '_blank',
+            externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
             config: {
                 footnotes: true,
             },
