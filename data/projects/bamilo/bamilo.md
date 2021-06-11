@@ -5,7 +5,7 @@ description: پلتفرم خرده‌فروشی
 failure_reason: مشکل مالی و هم‌نوع خواری در هولدینگ سرمایه‌گذار
 failure_year: 1397
 investors:
-    - MTN Irancell
+    - گروه اینترنتی ایران
 founders:
     - رامتین منزهیان
 employes: 201-500
