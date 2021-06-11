@@ -104,7 +104,7 @@ export default {
             if (values && values.length) {
                 return this.formatter.format(values);
             }
-            return '-';
+            return 'نامشخص';
         },
     },
 };

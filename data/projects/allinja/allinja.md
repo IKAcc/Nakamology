@@ -7,7 +7,7 @@ failure_year: 1394
 investors:
 founders:
     - علی صالحی
-employes: 2-10
+employes:
 logo: ./allinja.png
 tags:
     - تخفیف
@@ -23,5 +23,5 @@ tags:
 آلینجا تمرکز خود را فقط بر سه شهر تهران، مشهد و کیش محدود کرده بود و از بازارهای دیگر کلانشهرهای ایران بیرون ماند.
 
 ## پیوند‌ها و منابع
-* **معرفی سایت تخفیف آلینجا** از [عصرایران](https://www.asriran.com/fa/news/337006/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%AA%D8%AE%D9%81%DB%8C%D9%81-%D8%A2%D9%84%DB%8C%D9%86%D8%AC%D8%A7)
-* **شکست استارتاپ ایرانی آلینجا : شروعی طولانی و سقوطی آرام** از [نبضی‌نو](https://nabzino.com/4650/iranian-startup-failure-alinja/)
+* [معرفی سایت تخفیف آلینجا](https://www.asriran.com/fa/news/337006/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%AA%D8%AE%D9%81%DB%8C%D9%81-%D8%A2%D9%84%DB%8C%D9%86%D8%AC%D8%A7) از **عصرایران**
+* [شکست استارتاپ ایرانی آلینجا : شروعی طولانی و سقوطی آرام](https://nabzino.com/4650/iranian-startup-failure-alinja/) از **نبض‌نو**

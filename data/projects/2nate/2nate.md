@@ -27,7 +27,7 @@ tags:
 همچنین، مجوزهای ساخته شده، با نفس جمع‌سپاری در تناقض بودند. به طوری که در سال آخر منجر به مسدود شدن حساب‌های بانکی و صدور حکم جلب یکی از موسسان آن شد.
 
 ## پیوند‌ها و منابع
-* **دونیت تعطیل شد** از [آی‌چیزها](https://icheezha.ir/%D8%AF%D9%88%D9%86%DB%8C%D8%AA-%D8%AA%D8%B9%D8%B7%DB%8C%D9%84-%D8%B4%D8%AF/)
-* **چرا دونیت تعطیل شد** به قلم *محمدرضا ذاکری* از [اکوموتیو](https://ecomotive.ir/1398/07/24/2-nate-interviw/)
+* [دونیت تعطیل شد](https://icheezha.ir/%D8%AF%D9%88%D9%86%DB%8C%D8%AA-%D8%AA%D8%B9%D8%B7%DB%8C%D9%84-%D8%B4%D8%AF/) از **آی‌چیزها**
+* [چرا دونیت تعطیل شد](https://ecomotive.ir/1398/07/24/2-nate-interviw/) به قلم *محمدرضا ذاکری* از **اکوموتیو**
 * [startupranking.com](https://www.startupranking.com/2nate)
 * [jobinja.ir](https://jobinja.ir/companies/2nate)
