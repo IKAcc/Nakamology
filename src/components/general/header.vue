@@ -7,7 +7,7 @@
             <ul class="flex flex-wrap">
                 <li v-for="link in links"
                     :key="link.to">
-                    <g-link :to="link.to" class="link link--white p-2 mx-2">
+                    <g-link :to="link.to" class="link link--white p-2 md:mx-2">
                         {{ link.title }}
                     </g-link>
                 </li>
