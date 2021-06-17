@@ -3,8 +3,19 @@
         <div class="mx-auto w-full max-w-5xl py-12">
             <div class="flex flex-wrap">
                 <div class="w-full md:w-1/4">
-                    <div class="md:sticky top-18 p-2">
-                        <project-card :project="project" card-type="profile"/>
+                    <div class="md:sticky top-18">
+                        <div class="p-2">
+                            <project-card :project="project" card-type="profile"/>
+                        </div>
+                        <div class="p-2">
+                            <a :href="`https://github.com/IKAcc/Nakamology/issues/new?assignees=&labels=misinformation&template=misleading-information.md&title=اشتباهی+درباره‌ی+«${project.name}»+وجود+داره`"
+                               target="_blank"
+                               class="text-sm opacity-80"
+                               rel="noopener noreferrer">
+                                اشتباهی وجود داره؟
+                                <span class="link link--red">به ما بگو!</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-3/4 p-2">
