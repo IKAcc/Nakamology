@@ -2,7 +2,7 @@
 name: Misleading Information
 about: Some Info about a project is not true
 title: 'Not totally honest about: [project_name]'
-labels: ''
+labels: misinformation
 assignees: ''
 
 ---
