@@ -1,12 +1,12 @@
 ---
 name: Misleading Information
 about: Some Info about a project is not true
-title: 'Not totally honest about: [project_name]'
+title: 'اشتباهی درباره‌ی «[project_name]» وجود داره'
 labels: misinformation
 assignees: ''
 
 ---
 
-**Describe Misinformation**
+**چه چیزی درباره‌ی این پروژه اشتباه بوده؟**
 
-**Some URLs to Back your Claim**
+**یک یا چند منبع برای این اطلاعات**
