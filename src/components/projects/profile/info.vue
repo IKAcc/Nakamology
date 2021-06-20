@@ -62,7 +62,7 @@ export default {
                     items: [
                         {
                             label: 'پایان',
-                            value: toFarsiDigits(this.project.start_year || 'نامشخص'),
+                            value: toFarsiDigits(this.project.failure_year || 'نامشخص'),
                         },
                         {
                             label: 'دلیل',
