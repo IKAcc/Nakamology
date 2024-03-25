@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+    <Layout class="overflow-x-hidden">
         <hero :total-count="totalProjectCount"/>
         <div class="container mx-auto px-2 py-4">
             <nk-title to="/projects">
@@ -9,7 +9,7 @@
                 <projects-list :projects="latestProjects" :card-type="device.isMobile ? 'horizontal' : 'vertical'"/>
             </div>
         </div>
-        <!-- <div class="container mx-auto px-2 py-4">
+        <div v-if="supporters" class="container mx-auto px-2 py-4">
             <h2 class="h2 text-center">
                 حامیان ما
             </h2>
@@ -24,7 +24,7 @@
                     </a>
                 </div>
             </div>
-        </div> -->
+        </div>
     </Layout>
 </template>
 <page-query>
@@ -75,20 +75,7 @@ export default {
         NkTitle,
     },
     data: () => ({
-        supporters: [
-            // {
-            //     name: 'استیکرهای فلربو',
-            //     url: 'https://flerbo.ir/%DA%86%D8%A7%D9%BE-%D8%A7%D8%B3%D8%AA%DB%8C%DA%A9%D8%B1-%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B5%DB%8C',
-            //     image: require('~/assets/images/supporters/flerbo.png'),
-            //     description: 'استیکر لوگوی تیمت رو بساز!',
-            // },
-            // {
-            //     name: 'سازیتو',
-            //     url: 'https://sazito.com/',
-            //     image: require('~/assets/images/supporters/sazito.png'),
-            //     description: 'ساخت رایگان فروشگاه اینترنتی',
-            // },
-        ],
+        supporters: [],
     }),
     computed: {
         ...mapState(['device']),

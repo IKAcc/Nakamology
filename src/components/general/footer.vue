@@ -11,11 +11,11 @@
                     </p>
                     <p/>
                 </div>
-                <div v-for="(list, index) in lists" :key="index">
+                <div class="flex-grow" v-for="(list, index) in lists" :key="index">
                     <span class="h2 block -mt-5">{{ list.header }}</span>
                     <ul>
                         <li v-for="link in list.links" :key="link.to">
-                            <a :href="link.to" target="_blank" rel="noopener noreferrer" class="link">
+                            <a :href="link.url" target="_blank" rel="noopener noreferrer" class="link">
                                 {{ link.title }}
                             </a>
                         </li>
