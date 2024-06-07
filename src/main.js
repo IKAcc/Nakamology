@@ -16,6 +16,22 @@ const META_TAGS = [
         content: 'utf-8',
     },
 ];
+const SCRIPTS = [
+    {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-QW2XREL5YM',
+        body: true,
+        async: true,
+    },
+    {
+        innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QW2XREL5YM');
+        `,
+        body: true,
+    },
+];
 const LINKS = [
     {
         rel: 'stylesheet',
@@ -35,6 +51,10 @@ const HEAD = [
     {
         key: 'link',
         items: LINKS,
+    },
+    {
+        key: 'script',
+        items: SCRIPTS,
     },
 ];
 
