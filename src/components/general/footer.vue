@@ -11,7 +11,7 @@
                     </p>
                     <p/>
                 </div>
-                <div class="flex-grow" v-for="(list, index) in lists" :key="index">
+                <div v-for="(list, index) in lists" :key="index">
                     <span class="h2 block -mt-5">{{ list.header }}</span>
                     <ul>
                         <li v-for="link in list.links" :key="link.to">

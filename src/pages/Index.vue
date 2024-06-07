@@ -1,5 +1,5 @@
 <template>
-    <Layout class="overflow-x-hidden">
+    <Layout>
         <hero :total-count="totalProjectCount"/>
         <div class="container mx-auto px-2 py-4">
             <nk-title to="/projects">
@@ -9,7 +9,7 @@
                 <projects-list :projects="latestProjects" :card-type="device.isMobile ? 'horizontal' : 'vertical'"/>
             </div>
         </div>
-        <div v-if="supporters" class="container mx-auto px-2 py-4">
+        <div v-if="supporters.length" class="container mx-auto px-2 py-4">
             <h2 class="h2 text-center">
                 حامیان ما
             </h2>
