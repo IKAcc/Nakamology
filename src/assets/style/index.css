@@ -44,3 +44,6 @@ a.card {
 .h2 {
     @apply text-white opacity-90 text-2xl py-5 font-serif;
 }
+.list-persian {
+    list-style: persian;
+}
