@@ -28,5 +28,5 @@ tags:
 ## پیوند‌ها و منابع
 * [توییت‌های شخصی نیما نورمحمدی](https://twitter.com/Nima1980/status/1400788706546622465) در توییتر
 * [دیوار با تصاحب آی هوم، در پی ساماندهی آگهی املاک است](https://www.zoomit.ir/tech-iran/339825-divar-acquired-ihome/) به قلم *حسین خلیلی صفا* در **زومیت**
-* [ihome.ir](https://ihome.ir/)
+* [ihome.ir](https://web.archive.org/web/20210821045904/https://ihome.ir/)
 * [ecosystem.ir](https://ecosystem.ir/legal/blog/2251/)
