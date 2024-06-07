@@ -49,7 +49,7 @@
                 تمامی محتوا و همچین کدهای این وبسایت تحت مجوز MIT در گیتهاب به صورت متن‌باز <a href="https://github.com/IKAcc/nakamology" target="_blank" rel="noopener noreferrer" class="link link--red font-bold">منتشر شده‌اند</a>.
             </p>
             <p class="mb-2">
-                در این پروژه از تایپ‌فیس‌های <a href="https://rastikerdar.github.io/sahel-font/" target="_blank" rel="noopener noreferrer" class="link link--red font-bold">ساحل</a> و <a href="https://rastikerdar.github.io/vazir-font/" target="_blank" rel="noopener noreferrer" class="link link--red font-bold">وزیر</a> ساخته‌ی <strong class="text-white">صابرراستی‌کردار</strong> استفاده می‌شود. هر دو تحت مجوز SIL Open Font منتشر شده‌اند.
+                در این پروژه از تایپ‌فیس‌های <a href="https://rastikerdar.github.io/sahel-font/" target="_blank" rel="noopener noreferrer" class="link link--red font-bold">ساحل</a> و <a href="https://rastikerdar.github.io/vazir-font/" target="_blank" rel="noopener noreferrer" class="link link--red font-bold">وزیر</a> ساخته‌ی <strong class="text-white">مرحوم صابرراستی‌کردار</strong> استفاده می‌شود. هر دو تحت مجوز SIL Open Font منتشر شده‌اند.
             </p>
             <p class="mb-2">
                 آیکون‌ها نیز توسط <strong class="text-white">Kirill Kazachek</strong> طراحی شده و در وبسایت <a href="https://www.flaticon.com/authors/kirill-kazachek" target="_blank" rel="noopener noreferrer" class="link link--red font-bold">flaticon.com</a> منتشر شده است.
